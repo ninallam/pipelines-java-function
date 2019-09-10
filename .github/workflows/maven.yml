@@ -35,7 +35,7 @@ jobs:
       run: |
         # If your function app project is not located in your repository's root
         # Please change your directory for maven build in pushd
-        pushd ./jf
+        pushd .
         mvn clean package
         mvn azure-functions:package
         popd
@@ -46,7 +46,7 @@ jobs:
         app-name: GHFuncApp
         # If your function app project is not located in your repository's root
         # Please consider prefixing the project path in this package parameter
-        package: ./jf/target/azure-functions/javafunctions
+        package: ./target/azure-functions/javafunctions
     #- name: 'use the published functionapp url in upcoming steps'
     #  run: |
     #    echo "${{ steps.fa.outputs.app-url }}"
