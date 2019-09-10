@@ -1,6 +1,5 @@
 
 # Action Requires
-#
 # 1. Setup the AZURE_CREDENTIALS secrets in your Github Repository by following README.md
 # 2. Replace PLEASE_REPLACE_THIS_WITH_YOUR_FUNCTION_APP_NAME with your Azure function app name
 # 3. Replace POM_ARTIFACT_ID with the value in project <artifactId> in pom.xml
